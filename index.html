@@ -30,7 +30,7 @@ http://www.templatemo.com/tm-472-RESIDENCIA
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 <!-- navigation section -->
-<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+<section class="navbar navbar-fixed-top custom-navbar" role="navigation" style="background-color: #231b23; color: white;" >
 	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,62 +38,115 @@ http://www.templatemo.com/tm-472-RESIDENCIA
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand"><span class="bold">RESIDENCIA</span></a>
+			<a href="#"><span>
+				<img style="background-color: #231b23; width: 100px; height: auto;"  src="images/logo.png" alt="new logo"/>
+				<img style="background-color: #231b23; width: 150px; height: auto;" src="images/logotext1.png" alt="logo"/>
+			  </span></a>
+						
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#home" class="smoothScroll">Home</a></li>
 				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
 				<li><a href="#services" class="smoothScroll">SERVICES</a></li>
-				<li><a href="#team" class="smoothScroll">TEAM</a></li>
+				<li><a href="#team" class="smoothScroll">FAQ</a></li>
 				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
 	</div>
 </section>
 
-<!-- home section -->
+
 <section id="home">
 	<div class="container">
-	  <div class="left-content">
-		<h1>Welcome to RESIDENCIA Community</h1>
-		<p>Manage your community seamlessly with RESIDENCIA. Stay updated with society profiles, user and visitor management, resident records, amenities, announcements, accounts, and a gallery for images.</p>
-		<input type="text" placeholder="FULL NAME">
-		<input type="tel" placeholder="PHONE NUMBER">
-		<button>Join Now</button>
-	  </div>
-	  <div class="right-content">
+		<div class="left-content text-center">
+		
+			<h2 class="heading bold">Welcome to</h2>	
+			<h1 class="heading bold">RESIDENCIA Community</h1>
+			<p>Manage your community seamlessly with <b>RESIDENCIA</b> .
+				Stay updated with society profiles, user and visitor management, resident records,
+				amenities, announcements, accounts, and a gallery for images.
+			</p>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 ">
+					<form action="#" method="post">
+						<div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-6">
+							<input  style="background-color: #afa7a7; color: black;" name="submit" type="submit" class="form-control" id="submit" value="Start Free Trial">
+						</div>
+					</form>
+				</div>
+			</div>
+	  	</div>
+	  <!-- <div class="right-content">
 		<img src="images/home.jpg" alt="RESIDENCIA Community">
 	  </div>
-	</div>
-  </section>
+	</div> -->
+</section>
 
 <!-- about section -->
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-                <h1 class="heading bold">ABOUT US</h1>
-                <h2 class="subheading">WE ARE TALENTED DESIGNERS & DEVELOPERS</h2>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
-                <i class="fa fa-cloud"></i>
-                <h3>Planning</h3>
-                <p>We begin by understanding your goals and objectives. Through meticulous planning and analysis, we ensure that every project is aligned with your vision. Our team works collaboratively to devise strategies that lead to successful outcomes.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
-                <i class="fa fa-laptop"></i>
-                <h3>Developing</h3>
-                <p>Our development process is driven by creativity and technical expertise. From crafting intuitive user interfaces to developing robust back-end systems, we leverage the latest technologies and methodologies to build high-quality solutions.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
-                <i class="fa fa-globe"></i>
-                <h3>Launching</h3>
-                <p>Before launching, we conduct thorough testing to guarantee that our products meet the highest standards of performance and reliability. Our goal is to ensure a seamless launch and a positive experience for our users.</p>
-            </div>
+<section  id="about">
+   <div class="container">
+        <!-- <div class="row text-center">
+            <h1 class="heading bold">ABOUT</h1>
+            <h2 class="subheading">The Premier Apartment Management Software</h2>
+        </div>
+     -->
+		<div class="row card-container">
+			<div class="col-md-4 col-sm-12">
+				<div class="card wow fadeInUp" data-wow-delay="0.6s">
+					<div class="slide slide1">
+						<div class="content">
+							<div class="icon">
+								<i class="fa fa-cogs"></i>
+							</div>
+						</div>
+					</div>
+					<div class="slide slide2">
+						<div class="content">
+							<h3>APP</h3>
+							<p>Our software integrates global best practices to streamline and elevate the management of apartment complexes, villas, and entire townships</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-12">
+				<div class="card wow fadeInUp" data-wow-delay="0.9s">
+					<div class="slide slide1">
+						<div class="content">
+							<div class="icon">
+								<i class="fa fa-laptop"></i>
+							</div>
+						</div>
+					</div>
+					<div class="slide slide2">
+						<div class="content">
+							<h3>ERP</h3>
+							<p>Streamline apartment management with Residencia—offering global best practices, automation, and transparency for true convenience in community living.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-12">
+				<div class="card wow fadeInUp" data-wow-delay="1s">
+					<div class="slide slide1">
+						<div class="content">
+							<div class="icon">
+								<i class="fa fa-shield"></i>
+							</div>
+						</div>
+					</div>
+					<div class="slide slide2">
+						<div class="content">
+							<h3>GATEKEEPER</h3>
+							<p>Welcome guests warmly and keep trespassers at bay with our advanced visitor management system.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
             <hr>
 
@@ -103,40 +156,49 @@ http://www.templatemo.com/tm-472-RESIDENCIA
 			</div>
 
 			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-				<h3>Our Focus</h3>
-				<p>At our company, we specialize in two key areas to help drive your success:</p>
+				<h2 class="subheading">Enhance Community Living with Smart Solutions</h2>
+				
 				<div class="focus-item">
-					<span><i class="fa fa-mobile"></i> Mobile Apps</span>
+					<span><i class="fa fa-mobile"></i> For Residents:</span>
 					<div class="progress">
 						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
 					</div>
 				</div>
 				<div class="focus-item">
-					<span><i class="fa fa-link"></i> Web Development</span>
+					<span><i class="fa fa-link"></i> For Admins:</span>
 					<div class="progress">
 						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
 					</div>
 				</div>
-				
-			</div>
+				<div class="focus-item">
+					<span><i class="fa fa-star"></i> Popular Features:</span>
+					<ul>
+						<li>Our Visitor Management</li>
+						<li>Multi-Community One Clubhouse Architecture</li>
+						<li>Separate Accounts for Commmitte Members and Admin</li>
+						<li>Billing Facility</li>	
+					</ul>	
+				</div>
 			
-        </div>
+        	</div>
     </div>
 </section>
 
 <!--new added -->
     <div class="container">
         <section id="services">
-            <h3 class="heading bold">Our Services</h3>
+			<div class="col-md-12 col-sm-12 text-center">
+				<h1 class="heading bold">OUR SERVICES</h1>
+			
             <div class="services-layout">
-                <div class="services-list">
+                <!-- <div class="services-list">
                     <ul>
                         <li>Streamlined Report Generation Services</li>
                         <li>Automate Financial Reporting Processes</li>
                         <li>User-Focused Financial Insights</li>
                     </ul>
-                    <button class="explore-btn">Explore Now</button>
-                </div>
+                    <button class="explore-btn" style="background-color: #afa7a7; color: black;">Explore Now</button>
+                </div> -->
                 <div class="services-grid">
                     <div class="service-item light-green">
                         <div class="icon">⚙️</div>
@@ -162,78 +224,10 @@ http://www.templatemo.com/tm-472-RESIDENCIA
             </div>
 		</section>
 	</div>
-	<div class="container">
-        <section class="benefits">
-			<h1 class="heading bold">Key Benefits</h1>
-
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="icon">⚙️</div>
-                    <h3>Efficiency Boost</h3>
-                    <p>Easily streamline your financial reports.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">🔒</div>
-                    <h3>Data Security</h3>
-                    <p>Manage data securely with ease.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">✅</div>
-                    <h3>Security and Compliance</h3>
-                    <p>Ensure compliance with our tools.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="icon">🚀</div>
-                    <h3>Real-Time Insights</h3>
-                    <p>Get real-time insights and reports.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-
-<!-- team section -->
-<section id="team">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<h1 class="heading bold">OUR TEAM</h1>
-				<h2 class="subheading">CREATIVE TALENTS</h2>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="0.9s">
-				<div class="team-wrapper">
-					<img src="images/team1.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Tracy</h4>
-							<h3>Designer</h3>
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.3s">
-				<div class="team-wrapper">
-					<img src="images/team2.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Linda</h4>
-							<h3>Manager</h3>
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.6s">
-				<div class="team-wrapper">
-					<img src="images/team3.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Mary</h4>
-							<h3>Developer</h3>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- contact section -->
-<section id="contact">
+<!-- 
+ contact section -->
+ 
+<section  id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
@@ -241,22 +235,9 @@ http://www.templatemo.com/tm-472-RESIDENCIA
 				<h2 class="subheading">WE LOVE PRETTY MUCH TO HEAR FROM YOU</h2>
 			</div>
 		</div>
+	</div>
 		<div class="row">
-			<div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
-				<i class="fa fa-phone"></i>
-					<h3>+91-996-711-8022 </h3>
-			</div>
-			<div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
-				<i class="fa fa-envelope-o"></i>
-					<h3>info@xirainfotech.com</h3>
-			</div>
-			<div class="contact-info-box col-md-4 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="1s">
-				<i class="fa fa-map-marker"></i>
-					<h3>Gujarat, India</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
+			<div class="col-md-12 col-sm-12 ">
 				<form action="#" method="post">
 					<div class="col-md-6 col-sm-6">
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
@@ -267,26 +248,44 @@ http://www.templatemo.com/tm-472-RESIDENCIA
 						<textarea name="message" rows="7" class="form-control" id="message" placeholder="Message"></textarea>
 					</div>
 					<div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-6">
-						<input name="submit" type="submit" class="form-control" id="submit" value="SEND EMAIL">
+						<input  style="background-color: #afa7a7; color: black;" name="submit" type="submit" class="form-control" id="submit" value="SEND EMAIL">
 					</div>
 				</form>
 			</div>
 		</div>
-	</div>
-</section>
+	
+	<!-- <div class="row">
+		<div class="col-md-3 col-sm-3 col-xs-2 wow fadeInUp" data-wow-delay="0.6s">
+				<i class="fa fa-phone"></i>
+					<h3>+91-996-711-8022 </h3>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-2 wow fadeInUp" data-wow-delay="0.8s">
+				<i class="fa fa-envelope-o"></i>
+					<h3>info@xirainfotech.com</h3>
+		</div>
+	</div> -->
+</section> 
 
 <!-- footer section -->
 <footer>
+	<div class="map-container">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.2300607106354!2d72.91153207449226!3d20.373402081117007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ce33ced991e1%3A0xffeb1755913c0a6f!2sSONOROUS!5e0!3m2!1sen!2sin!4v1722845174314!5m2!1sen!2sin" 
+		width="100%" 
+		height="450" 
+		style="border:0;" 
+		allowfullscreen="" 
+		loading="lazy" 
+		referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<ul class="social-icon">
-					<li><a href="http://www.facebook.com/templatemo" 
-                    				class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s" target="_parent"></a></li>
+					<li><a href="http://www.facebook.com/templatemo" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s" target="_parent"></a></li>
 					<li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
-					<li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-phone wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-envelope-o wow bounceIn" data-wow-delay="0.9s"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -294,7 +293,7 @@ http://www.templatemo.com/tm-472-RESIDENCIA
 </footer>
 
 <!-- copyright section -->
-<section id="copyright">
+<section  id="copyright">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-9">

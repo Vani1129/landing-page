@@ -1,33 +1,31 @@
-/*
 
-RESIDENCIA Template
-
-http://www.templatemo.com/tm-472-RESIDENCIA
-
-*/
-
-body
-{
-	background: #ffffff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+body{
+  font-family: "Rubik", sans-serif;
+  
+  font-weight: 400;
 	position: relative;
 }
+
 
 html,body {
 	width: 100%;
 	overflow-x: hidden;
 }
 
-h1,h2,h3,h4 {
+h1,h3,h4 {
 	font-weight: bold;
 }
 
 .heading {
-	font-size: 60px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px
 }
 .subheading {
-	font-size: 14px;
+  font-family: "Rubik", sans-serif;
+	font-size: 20px;
 	font-weight: bold;
 	padding-bottom: 60px;
 }
@@ -36,6 +34,7 @@ h1,h2,h3,h4 {
 }
 
 p {
+  font-family: "Rubik", sans-serif;
 	letter-spacing: 0px;
 	line-height: 28px;
 }
@@ -55,6 +54,8 @@ p {
 .custom-navbar {
     background: #ffffff;
     margin-bottom: 0;
+    padding: 8px 0;
+    height:130px;
 }
 .custom-navbar .navbar-brand  {
 	color: #303030;
@@ -71,8 +72,8 @@ p {
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 4px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
 	transition: all 0.3s ease-in-out;
 }
 .custom-navbar .nav li a:hover {
@@ -88,7 +89,7 @@ p {
 }
 .custom-navbar .navbar-toggle {
     border: none;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .custom-navbar .navbar-toggle .icon-bar {
     background: #FFD321;
@@ -97,20 +98,24 @@ p {
 @media(min-width:768px){
     .custom-navbar {
             background: #ffffff;
-            padding: 14px;
+            padding: 10px 0;
             border-bottom: 0;
             background: 0 0;
          }
     .custom-navbar.top-nav-collapse {
-            padding: 14px;
+            padding: 10px;
             background: #fff;
             border-bottom: 1px solid #eeeeee;
         }
 }
 
+
+
 /* home section */
+
 #home {
- 
+  position: relative;
+  background-image: url('images/home.jpg') ;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -123,7 +128,30 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  min-height: 100vh;
   text-align: center;
+  padding: 50px 0;
+	color: #fff;
+}
+
+#home .container {
+	position: relative;
+	z-index: 2;
+}
+#submit {
+	background-color: #afa7a7;
+	color: black;
+}
+
+#home::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: to add an overlay */
+	z-index: 1;
 }
 #home hr {
   border: 2px solid #404040;
@@ -134,7 +162,7 @@ p {
 }
 #home .btn {
   background: transparent;
-  border-radius: 0;
+  border-radius: 5px;
   border: 3px solid #404040;
   color: #404040;
   font-weight: bold;
@@ -174,65 +202,13 @@ p {
   padding-bottom: 6px;
 }
 #about .progress {
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
   height: 6px;
 }
 #about .progress .progress-bar-primary {
   background: #FFD321;
 }
-
-/* portfolio section */
-#portfolio {
-  padding-top: 100px;
-  background: #f9f9f9;
-  text-align: center;
-  }
-#portfolio .container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-#portfolio .col-md-4 {
-  padding: 0;
-  margin: 0;
-}
-#portfolio img {
-  width: 100%;
-  transition: all 0.4s ease-in-out;
-}
-#portfolio img:hover {
-  opacity: 0.6;
-}
-/* FILTER CSS */
-.filter-wrapper {
-    width: 100%;
-    margin: 40px 0 24px 0;
-    overflow: hidden;
-    text-align: center;
-}
-.filter-wrapper li {
-    display: inline-block;
-    margin: 4px;
-}
-.filter-wrapper li a {
-    color: #999999;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 8px 17px;
-    display: block;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-}
-.filter-wrapper li .selected,
-.filter-wrapper li a:focus,
-.filter-wrapper li a:hover {
-    background: #FFD321;
-    color: #ffffff;
-    outline: none;
-  }
 
 /* ISOTOPE BOX CSS */
 .iso-box-section {
@@ -285,30 +261,48 @@ p {
 #contact {
   background: #f9f9f9;
   text-align: center;
+  padding: 50px 0;
 }
 #contact .fa {
   font-size: 40px;
 }
+#contact .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#contact .contact-info-box {
+  flex: 1;
+  min-width: 100px;
+  text-align: left;
+}
 #contact form {
-  padding-top: 80px;
+  flex: 2;
+  min-width: 300px;
+  padding-top: 20px;
 }
 #contact .form-control {
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
   margin-top: 10px;
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
+  width: 100%;
 }
 #contact .form-control:focus {
   border: 2px solid #808080;
 }
 #contact input {
   height: 50px;
+  width: 100%;
 }
 #contact input[type="submit"] {
   border: 2px solid #808080;
   margin-top: 18px;
   height: 54px;
+  width: 100%;
 }
 #contact input[type="submit"]:hover {
   background: #808080;
@@ -316,12 +310,12 @@ p {
 }
 #contact textarea {
   height: 170px;
+  width: 100%;
 }
-.contact-info-box h3 { font-size: 16px; }
+
 
 /* footer section */
 footer {
-  background: url('../images/footer-bg.jpg') no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -445,7 +439,7 @@ footer {
   align-items: center;
   justify-content: center;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 15px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -460,7 +454,7 @@ footer {
 .img-box img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .detail-box {
@@ -485,37 +479,119 @@ footer {
   color: #333;
 }
 /* new added*/
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding: 40px 20px;
 }
 
 .left-content {
-  flex: 1;
-  padding-right: 40px;
+  flex: 2;
+  padding-right: 40px; /* Increased padding for better spacing */
+  padding-left: 20px;
+  text-align: left; /* Aligns text to the left for better readability */
 }
 
-.left-content {
-  flex: 1;
-  padding-left: 40px;
+
+.container .card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #544357;
+  ;
+
 }
 
+.container .card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #fff;
+}
+
+.container .card .slide {
+  width: 350px;
+  height: 250px;
+  transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: .7s;
+  transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1{
+  transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translateY(-100px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.container .card:hover .slide.slide2{
+  transform: translateY(0);
+}
+
+.container .card .slide.slide2::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  bottom: 15px;
+  left: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d6c0da;
+}
+
+.container .card .slide.slide2 .content p {
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141;
+}
+
+.container .card .slide.slide2 .content h3 {
+
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+} 
 .right-content img {
-  width: 70%;
-  height: auto;
-  border-radius: 20px;
+  flex:2;
+  width: 100%; /* Makes the image full width */
+  padding-top: 40px;
+  max-width: 600px; /* Sets a maximum width for the image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 5px; /* Rounds the corners of the image */
 }
 
 input, button {
-  display: block;
+  display:inline-block;
   margin-bottom: 10px;
   width: 100%;
   padding: 10px;
@@ -538,8 +614,6 @@ h1, h2 {
   margin-bottom: 40px;
 
 }
-
-
 
 .services-list {
   flex: 1;
@@ -573,30 +647,35 @@ h1, h2 {
 }
 
 .services-grid {
-  flex: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 120px; /* Increase the gap for better spacing */
+  padding: 20px; /* Add some padding around the grid */
 }
 
 .service-item {
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 5px;
+  width: 120%; /* Ensure it takes full width of its container */
+  height: 200px; /* Set a fixed height for increased size */
+  padding: 30px; /* Increase padding for a bigger look */
+  box-shadow: 0 20px 30px rgba(10, 0, 0, 0.1); /* Add a subtle shadow for better appearance */
+  box-sizing: border-box; /* Ensure padding does not affect total width/height */
 }
+
+
 
 .service-item .icon {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px; /* Increase icon size */
+  margin-bottom: 15px; /* Increase bottom margin */
 }
-
 .service-item h3 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
+  margin: 0 0 15px 0; /* Increase bottom margin */
+  font-size: 20px; /* Increase font size */
 }
 
 .service-item p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px; /* Increase font size */
 }
 
 .light-green { background-color: #e8f5e9; }
@@ -605,18 +684,27 @@ h1, h2 {
 .light-red { background-color: #ffebee; }
 
 /* Benefits Section */
-.benefits {
-  background-color: white; /* Changed to white background */
-  padding: 40px 20px; /* Increased padding for better spacing */
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+  min-height: 100vh; /* Makes the container take the full height of the viewport */
 }
+
+.benefits {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px; /* Increased gap for better separation between items */
   margin-top: 20px;
 }
@@ -630,7 +718,7 @@ h1, h2 {
 .benefit-item {
   padding: 20px;
   background-color: #f8f8f8; /* Light gray background for each item */
-  border-radius: 8px;
+  border-radius: 5px;
   transition: transform 0.3s ease;
 }
 
