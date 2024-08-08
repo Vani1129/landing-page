@@ -105,6 +105,7 @@ p {
     border-radius:5px;
   
 }
+
 @media(min-width:768px){
     .custom-navbar {
             background: #ffffff;
@@ -118,64 +119,93 @@ p {
             border-bottom: 1px solid #eeeeee;
         }
 }
-/* home section */
+/* home section  */
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 #home {
   position: relative;
-  background-image: url('images/home.jpg') ;
+  background-image: url('images/home.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 100vh;
-  min-height: 100vh;
   text-align: center;
   padding: 50px 0;
-	color: #3d303f;
+  color: #3d303f;
 }
 
 #home .container {
-	position: relative;
-	z-index: 2;
+  position: relative;
+  z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 40px 20px;
 }
+
+#home .left-content {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+#home .right-content {
+  animation: fadeInRight 1s ease-in-out;
+}
+
 #submit {
   font-family: "Rubik", sans-serif;
-	background-color: #4f3052;
+  background-color: #4f3052;
   position: relative;
-	color: rgb(240, 232, 232);
+  color: rgb(240, 232, 232);
   border-radius: 5px;
-  box-shadow: 0 20px 30px rgba(10, 0, 0, 0.1); /* Add a subtle shadow for better appearance */
-  width:20vh;
+  box-shadow: 0 20px 30px rgba(10, 0, 0, 0.1);
+  width: 20vh;
 }
 
 #home::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-  background: rgba(223, 200, 226, 0.5); /* Optional: to add an overlay */
-	z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(223, 200, 226, 0.5);
+  z-index: 1;
 }
+
 #home hr {
   border: 2px solid #404040;
   width: 100px;
 }
+
 #home h3 {
   letter-spacing: 2px;
 }
+
 #home .btn {
   background: transparent;
   border-radius: 5px;
@@ -186,9 +216,29 @@ p {
   margin-top: 40px;
   transition: all 0.4s ease-in-out;
 }
+
 #home .btn:hover {
   background: #404040;
   color: #ffffff;
+}
+
+/* CSS for Word Animation */
+@keyframes fadeInWord {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#home .left-content h1 span,
+#home .left-content h2 span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInWord 5s forwards;
 }
 
 /* about section */
@@ -224,6 +274,163 @@ p {
 }
 #about .progress .progress-bar-primary {
   background: #FFD321;
+}
+/*APP section*/
+#app {
+  font-family: Arial, sans-serif;
+  padding: 50px 0;
+  background: rgba(131, 112, 133, 0.5);
+  color:rgb(36, 14, 39);
+}
+
+#app .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+.app-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone-container {
+  position: center;
+  width: 300px;
+  margin-bottom: 30px;
+  margin-left: -15%;
+ 
+}
+
+.phone-image {
+  width: 150%;
+  height: auto;
+}
+
+.feature {
+  width: 200px;
+  margin: 15px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 20px;
+  color:rgb(36, 14, 39);
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px; 
+  color: #373338;
+}
+
+.residents-count {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+.left-column {
+  flex: 0;
+  margin-right: 0px; 
+}
+
+
+.left-column .feature {
+  margin-bottom: 1.5in; 
+}
+.right-column .feature {
+  margin-bottom: 1.5in; 
+}
+#app .feature {
+  position: relative;
+  padding: 20px; 
+  background-color: #49497e;
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(47, 3, 68, 0.5); 
+  overflow: hidden;
+}
+
+.feature h3 {
+  margin-top: 0;
+  color: rgb(214, 172, 223);
+  font-weight: bold;
+
+}
+
+.feature p {
+  margin-bottom: 0;
+  color: rgb(230, 208, 208);
+
+}
+
+
+/*ERP section*/
+#erp .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+#erp .right-content img {
+  border-radius: 300px 80px 300px 50px;
+  box-shadow: 0 30px 50px rgba(61, 3, 3, 0.1); 
+}
+/*gate*/
+#gatekeeper {
+  font-family: Arial, sans-serif;
+  padding: 50px 0;
+  background: rgba(239, 220, 241, 0.5);
+  color: rgb(36, 14, 39);
+}
+
+#gatekeeper .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+#gatekeeper .left-content img {
+  width: 100%;
+  border-radius: 66% 24% 50% 70% / 75% 51% 59% 45%;
+  box-shadow: 80px 80px 140px rgba(66, 2, 71, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gatekeeper .right-content {
+  align-items: end;
+  transition: transform 0.3s ease;
+}
+
+#gatekeeper .right-content h3 {
+  margin-top: 0;
+  color: rgb(79, 5, 95);
+  font-weight: bold;
+}
+
+#gatekeeper .right-content p {
+  margin-bottom: 0;
+  color: rgb(88, 36, 95);
+}
+
+#gatekeeper .container:hover .left-content img {
+  transform: scale(1.05);
+  box-shadow: 100px 100px 160px rgba(66, 2, 71, 0.2);
+}
+
+#gatekeeper .container:hover .right-content {
+  transform: translateX(10px);
 }
 
 /* ISOTOPE BOX CSS */
@@ -275,8 +482,7 @@ p {
 
 /* contact section */
 #contact {
-  background: rgba(242, 229, 243, 0.5); /* Optional: to add an overlay */
-  
+  background: rgba(212, 206, 212, 0.5); /* Optional: to add an overlay */
   text-align: center;
  
 }
@@ -303,12 +509,12 @@ p {
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
   width: 100%;
-  background-color: #d9d5db;
-  color: #3d0442;
+  background-color: #f6f3f8;
+  color: #260629;
 
 }
 
-#contact input {
+#contact input{
   height: 50px;
   width: 100%;
   color: #3d0442;
@@ -316,8 +522,8 @@ p {
 }
 
 #contact input[type="submit"]:hover {
-  background: #808080;
-  color: #161515;
+  background: #400446;
+  color: #f1e8e8;
 }
 #contact textarea {
   height: 170px;
@@ -395,7 +601,7 @@ footer {
   font-family: "Rubik", sans-serif;
 
   align-items:left;
-  height: 155px;
+  height: 200px;
   padding-top: 10px;
  
 }
@@ -648,11 +854,38 @@ h1, h2 {
 }
 
 /* Services Section */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+#services {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
 .services-layout {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
-
 }
 
 .services-list {
@@ -691,7 +924,6 @@ h1, h2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 120px; /* Increase the gap for better spacing */
   padding: 20px; /* Add some padding around the grid */
-  
 }
 
 .service-item {
@@ -701,14 +933,19 @@ h1, h2 {
   padding: 30px; /* Increase padding for a bigger look */
   box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better appearance */
   box-sizing: border-box; /* Ensure padding does not affect total width/height */
+  animation: slideInUp 1s ease-in-out; /* Apply initial slide-in animation */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-
+.service-item:hover {
+  animation: slideInUp 0.5s ease-in-out;
+}
 
 .service-item .icon {
   font-size: 28px; /* Increase icon size */
   margin-bottom: 15px; /* Increase bottom margin */
 }
+
 .service-item h3 {
   margin: 0 0 15px 0; /* Increase bottom margin */
   font-size: 20px; /* Increase font size */
@@ -719,10 +956,10 @@ h1, h2 {
   font-size: 16px; /* Increase font size */
 }
 
-.light-green { background-color: #e8f5e9; }
-.light-yellow { background-color: #fff8e1; }
-.light-blue { background-color: #e3f2fd; }
-.light-red { background-color: #ffebee; }
+.light-green { background-color: #c9f1cc; }
+.light-yellow { background-color: #f0e6c5; }
+.light-blue { background-color: #cedee9; }
+.light-red { background-color: #e4ccd0; }
 
 /* Benefits Section */
 .benefits-container {
